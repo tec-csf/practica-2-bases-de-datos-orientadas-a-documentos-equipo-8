@@ -1,0 +1,40 @@
+
+//Clientes
+[
+	{
+		"_id":int,
+		"age":int,
+		"name": string,
+		"gender":string,
+		"email":string,
+		"address":string
+	}
+]
+
+//productos
+[
+	{
+		"_id":int,
+		"cd_name": string,
+		"quantity":int,
+		"music_category":string,
+		"price":float
+	}
+]
+
+//ventas
+[
+	{
+		"_id":int,
+		"id_cliente": string,
+		"productos":
+		[
+		     {
+		       "id_producto": int,
+		       "name": string,
+		       "price": float
+		     }
+		]
+		"date":datetime
+	}
+]
